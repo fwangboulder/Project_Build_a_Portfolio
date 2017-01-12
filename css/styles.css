@@ -1,3 +1,23 @@
+/**
+ * TABLE OF CONTENTS:
+ *
+ *  0. GLOBAL
+ *  1. HELPERS
+ *  2. PROFILE
+ *  3. PROJECTS
+ *  4. FOOTER
+ *  5. RESPONSIVE
+ *    - 5.1. LARGE DEVICES, WIDE SCREENS
+ *    - 5.2. MEDIUM DEVICES, DESKTOPS
+ *    - 5.3. SMALL DEVICES, TABLETS LANDSCAPE
+ *    - 5.4. SMALL DEVICES, TABLETS PORTRAIT
+ *    - 5.5. EXTRA SMALL DEVICES, PHONES
+ *    - 5.6. CUSTOM, IPHONE RETINA
+ */
+
+/* ==========================================================================
+   0. GLOBAL
+   ========================================================================== */
 
  * {
      border: 1px Solid blue !important;
@@ -9,85 +29,162 @@
      -ms-box-sizing: border-box;
      box-sizing: border-box;
  }
- h1,h3 {
-
-    font-family: 'Lato', sans-serif;
-    font-weight: 400px;
-    text-align: center;
-
+ img .center {
+   display:block
+   margin: 0 auto;
  }
- h2 {
-   font-family: 'Lato', sans-serif;
-   font-size: 30px;
- }
+ /* ==========================================================================
+    2. PROFILE
+    ========================================================================== */
 
- p {
-   font-family: 'Lato', sans-serif;
-   font-size: 20px;
-}
- .grid {
-     margin: 0 auto;
-     max-width: 1200px;
-     width: 100%;
+ .profile {
+   margin-top: 10px;
+   text-align: right;
+   text-transform: uppercase;
  }
 
- .row {
-     width: 100%;
-     margin-bottom: 20px;
-     display: flex;
-     flex-wrap: wrap;
+ .profile-name {
+   margin: 0;
+   font-size: 4.286em;
  }
- img.center {
+
+ .profile-job {
+   margin: 5px;
+   font-size: 1.429em;
+ }
+
+ /* ==========================================================================
+    3. PROJECTS
+    ========================================================================== */
+
+ .project-featured {
+   color: gray;
+ }
+
+ .project {
+   text-align: center;
+ }
+
+ .project-title {
+   color: black;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+ }
+
+ .project-link {
+   font-size: 1.143em;
+   color: #666756;
+ }
+
+ /* ==========================================================================
+    5. RESPONSIVE
+    ========================================================================== */
+
+ /* 5.1 LARGE DEVICES, WIDE SCREENS
+    ========================================================================== */
+
+ /*@media only screen and (max-width: 1200px) {}*/
+
+ /* 5.2 MEDIUM DEVICES, DESKTOPS
+    ========================================================================== */
+
+ @media screen and (max-width: 992px) {
+   .profile {
+     text-align: center;
+   }
+
+   .profile-logo {
      display: block;
-     margin: 0 auto;
+     margin-right: auto;
+     margin-left: auto;
+
+   }
+
  }
 
+ /* 5.3 SMALL DEVICES, TABLETS LANDSCAPE
+    ========================================================================== */
 
- .col-1 {
-     width: 8.33%;
+ @media screen and (max-width: 768px) {
+   .profile {
+     text-align: center;
+   }
+
+   .profile-logo {
+     display: block;
+     margin-right: auto;
+     margin-left: auto;
+
+   }
+
  }
 
- .col-2 {
-     width: 16.66%;
+ /* 5.4 SMALL DEVICES, TABLETS PORTRAIT
+    ========================================================================== */
+
+ @media screen and (max-width: 600px) {
+   .profile {
+     text-align: center;
+   }
+
+   .profile-logo {
+     display: block;
+     margin-right: auto;
+     margin-left: auto;
+
+   }
+
+   .profile-name {
+     font-size: 2.857em;
+   }
+   .project-title {
+     font-size:1.4em
+   }
  }
 
- .col-3 {
-     width: 25%;
+ /* 5.5 EXTRA SMALL DEVICES, PHONES
+    ========================================================================== */
+
+ @media screen and (max-width: 480px) {
+   .profile {
+     text-align: center;
+   }
+
+   .profile-logo {
+     display: block;
+     margin-right: auto;
+     margin-left: auto;
+   }
+
+   .profile-name {
+     font-size: 2.857em;
+   }
+   .project-title {
+     font-size:1.4em
+   }
  }
 
- .col-4 {
-     width: 33.33%;
- }
+ /* 5.6 CUSTOM, IPHONE RETINA
+    ========================================================================== */
 
- .col-5 {
-     width: 41.66%;
- }
+ @media screen and (max-width: 360px) {
+   .profile {
+     text-align: center;
+   }
 
- .col-6 {
-     width: 50%;
- }
+   .profile-logo {
+     display: block;
+     margin-right: auto;
+     margin-left: auto;
+   }
 
- .col-7 {
-     width: 58.33%;
- }
+   .profile-name {
+     font-size: 2.0em;
 
- .col-8 {
-     width: 66.66%;
- }
+   }
+   .profile-job {
+     font-size:1.2em
+   }
 
- .col-9 {
-     width: 75%;
- }
-
- .col-10 {
-     width: 83.33%;
- }
-
- .col-11 {
-     width: 91.66%;
- }
-
- .col-12 {
-     width: 100%;
 
  }
