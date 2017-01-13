@@ -21,4 +21,4 @@ Step 2: open index.html file in your browser.
 
 step 3: change the size of your browser and see the changes of the pattern.
 
-step 4: click the figures and links to see other projects (have not completed yet).
+step 4: click the figures and links to see other projects.
